@@ -6,9 +6,14 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { EInfoComponent } from './e-info/e-info.component';
 
+
 @NgModule({
   imports: [BrowserModule, FormsModule],
   declarations: [AppComponent, HelloComponent],
   bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
 })
+
 export class AppModule {}
